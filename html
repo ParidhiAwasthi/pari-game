@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Well Do You Know Me?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <div class="quiz-container">
+    <h1>How Well Do You Know Me?</h1>
+    <p id="question">What is my favorite hobby?</p>
+    <div class="options">
+      <div class="option" onclick="checkAnswer(true)">
+        <img src="hobby_correct.jpg" alt="Option 1">
+        <p class="par">Reading</p>
+      </div>
+      <div class="option" onclick="checkAnswer(false)">
+        <img src="hobby_wrong.jpg" alt="Option 2">
+        <p class="par">Swimming</p>
+      </div>
+    </div>
+    <div id="feedback" class="hidden"></div>
+    <p id="score">Score: 0</p>
+    <button id="next-btn" onclick="nextQuestion()" class="hidden">Next Question</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
